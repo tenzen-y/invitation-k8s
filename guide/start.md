@@ -86,6 +86,7 @@ $ kubectl apply -f manifests/mysql/deployment.yaml
 以下のコマンドを実行して WordPress サーバを起動します．
 
 ```shell
+$ kubectl apply -f manifests/wordpress/configmap.yaml
 $ kubectl apply -f manifests/wordpress/pvc.yaml
 $ kubectl apply -f manifests/wordpress/service.yaml
 $ kubectl apply -f manifests/wordpress/deployment.yaml
@@ -105,4 +106,4 @@ wordpress-mysql-6c479567b-vrmb8   1/1     Running   0          2m51s
 
 ブラウザで ```http://localhost/``` にアクセスします．成功していると以下のように表示されます．
 
-[wordpress](./wordpress.png)
+![wordpress](./wordpress.png)
