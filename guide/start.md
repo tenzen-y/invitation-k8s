@@ -24,7 +24,7 @@ kubectl cluster-info --context kind-kind
 Have a nice day! 👋
 ```
 
-以下のコマンドを実行して，STATUS 欄が全て ```Ready``` になるまで待ちます．
+以下のコマンドを実行して，```STATUS``` 欄が全て ```Ready``` になるまで待ちます．
 
 ```shell
 $ kubectl get nodes
