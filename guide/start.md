@@ -106,4 +106,4 @@ wordpress-mysql-6c479567b-vrmb8   1/1     Running   0          2m51s
 
 ブラウザで ```http://localhost/``` にアクセスします．成功していると以下のように表示されます．
 
-[wordpress](./wordpress.png)
+![wordpress](./wordpress.png)
