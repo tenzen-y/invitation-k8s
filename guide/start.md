@@ -86,6 +86,7 @@ $ kubectl apply -f manifests/mysql/deployment.yaml
 以下のコマンドを実行して WordPress サーバを起動します．
 
 ```shell
+$ kubectl apply -f manifests/wordpress/configmap.yaml
 $ kubectl apply -f manifests/wordpress/pvc.yaml
 $ kubectl apply -f manifests/wordpress/service.yaml
 $ kubectl apply -f manifests/wordpress/deployment.yaml
