@@ -4,7 +4,16 @@ resources:
   - mysql.yaml
   - wordpress.yaml
 
+generatorOptions:
+  disableNameSuffixHash: true
+
 secretGenerator:
-- name: mysql-pass
-  literals:
-  - password=test
+  - name: mysql-pass
+    literals:
+      - password=test
+
+configMapGenerator:
+  - name: wordpress-config
+    literals:
+      - WORDPRESS_DB_HOST=wordpress-mysql
+      
