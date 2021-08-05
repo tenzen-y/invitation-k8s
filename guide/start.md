@@ -65,7 +65,7 @@ ingressclass.networking.k8s.io/nginx created
 以下のコマンドの実行結果が ```SucceededSucceededRunning``` になるまで待つ
 
 ```shell
-$ kubectl get pods -n ingress-nginx -l job-name=ingress-nginx-admission-create -ojsonpath={.items[*].status.phase} && kubectl get pods -n ingress-nginx -l job-name=ingress-nginx-admission-patch -ojsonpath={.items[*].status.phase} && kubectl get pods -n ingress-nginx -l app.kubernetes.io/component=controller -ojsonpath={.items[*].status.phase} && echo
+$ kubectl get pods -n ingress-nginx -l job-name=ingress-nginx-admission-create -ojsonpath='{.items[*].status.phase}' && kubectl get pods -n ingress-nginx -l job-name=ingress-nginx-admission-patch -ojsonpath='{.items[*].status.phase}' && kubectl get pods -n ingress-nginx -l app.kubernetes.io/component=controller -ojsonpath='{.items[*].status.phase}' && echo
 
 SucceededSucceededRunning
 ```
